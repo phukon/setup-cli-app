@@ -1,24 +1,15 @@
 {
   "name": "create-cli-app",
   "version": "1.0.0",
-  "description": "A cli app starter template to get you .",
+  "description": "Set up a modern CLI app by running one command.",
   "main": "index.js",
-  "bin": {
-    "create-cli-app": "./bin/index.js"
-  },
-  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Riki Phukon",
-  "license": "mit",
-  "dependencies": {
-    "ajv": "^8.12.0",
-    "arg": "^5.0.2",
-    "better-ajv-errors": "^1.2.0",
-    "chalk": "^5.3.0",
-    "cosmiconfig": "^8.3.6",
-    "debug": "^4.3.4"
+  "license": "MIT",
+  "devDependencies": {
+    "@changesets/cli": "^2.27.1"
   }
 }
