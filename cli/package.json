@@ -1,0 +1,31 @@
+{
+  "name": "create-cli-app",
+  "version": "1.0.0",
+  "description": "Set up a modern CLI app by running one command.",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "prebuild": "npm run clean",
+    "build": "tsup",
+    "preversion": "npm run build",
+    "postversion": "git push --tags"
+  },
+  "keywords": [],
+  "author": "Riki Phukon",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "@types/degit": "^2.8.6",
+    "@types/fs-extra": "^11.0.4",
+    "rimraf": "^5.0.5",
+    "tsup": "^8.0.2",
+    "type-fest": "^4.14.0"
+  },
+  "dependencies": {
+    "@inquirer/input": "^2.1.1",
+    "commander": "^12.0.0",
+    "degit": "^2.8.4",
+    "fs-extra": "^11.2.0",
+    "ora": "^8.0.1"
+  }
+}

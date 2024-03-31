@@ -1,7 +1,7 @@
 {
   "name": "create-cli-app",
   "version": "1.0.0",
-  "description": "Set up a modern CLI app by running one command.",
+  "description": "The easiest way to set up a modern CLI app by running one command.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,6 +10,7 @@
   "author": "Riki Phukon",
   "license": "MIT",
   "devDependencies": {
-    "@changesets/cli": "^2.27.1"
+    "@changesets/cli": "^2.27.1",
+    "@types/node": "^20.12.2"
   }
 }
