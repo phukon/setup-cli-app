@@ -10,7 +10,6 @@
   "author": "Riki Phukon",
   "license": "MIT",
   "devDependencies": {
-    "@changesets/cli": "^2.27.1",
     "@types/node": "^20.12.2"
   }
 }
