@@ -61,7 +61,7 @@ The easiest way to start a modern cli app. It supercharges your development work
 
 ## 🏎️ Usage
 
-1. Run <kbd>pnpm setup-cli-app init</kbd>. Follow the instructions. This scaffolds your project.
+1. Run <kbd>npx setup-cli-app init</kbd>. Follow the instructions. This scaffolds your project.
 2. Set your config and schema at src/config. (check schema.json)<br/>
 Upon building this TypeScript project, priority is given to configurations specified within the `package.json` file. Consequently, removing configurations from `package.json` will prompt the tool to adopt the new settings from the <kbd>tool.config.js</kbd> file.
 
