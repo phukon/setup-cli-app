@@ -28,7 +28,10 @@ export const init = new Command()
       const newDirPath = path.join(process.cwd(), projectName);
       await fs.ensureDir(newDirPath);
       await emitter.clone(newDirPath);
-      await modifyPackageJson(projectName)
+      await modifyPackageJson(projectName);
       spinner.succeed(`Your cli-app project has been setup! Happy hacking!`);
-    } catch {}
+    } catch (error) {
+      console.error("An error occurred:", error);
+      process.exit(1);
+    }
   });

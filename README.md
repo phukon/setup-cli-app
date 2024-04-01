@@ -20,7 +20,9 @@
   </div>
 </div>
 -->
-![b](https://github.com/phukon/setup-cli-app/assets/60285613/e5269230-ad4a-42fd-89dd-c59cc949008b)
+<a href="https://github.com/phukon/setup-cli-app">
+  <img src="https://github.com/phukon/setup-cli-app/assets/60285613/e5269230-ad4a-42fd-89dd-c59cc949008b"/>
+</a>
 
 
 <h2 align="center">📦 Setup CLI App</h2>
