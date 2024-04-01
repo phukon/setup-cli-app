@@ -1,6 +1,6 @@
 {
   "name": "setup-cli-app",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "The easiest way to set up a modern CLI app by running one command.",
   "main": "index.js",
   "author": "Riki Phukon",
