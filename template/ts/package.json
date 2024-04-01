@@ -1,10 +1,10 @@
 {
-  "name": "@create-cli-app/ts",
+  "name": "@setup-cli-app/ts",
   "version": "1.0.0",
   "description": "A cli app starter template to get you .",
   "main": "index.js",
   "bin": {
-    "create-cli-app": "./bin/index.js"
+    "setup-cli-app": "./bin/index.js"
   },
   "type": "module",
   "scripts": {

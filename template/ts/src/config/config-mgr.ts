@@ -5,7 +5,7 @@ import betterAjvErrors from "better-ajv-errors";
 import createLogger from "../logger.js";
 
 const ajv = new Ajv();
-const configLoader = cosmiconfigSync("tool");
+const configLoader = cosmiconfigSync("tool"); // the config file shold be called tool.config.js
 const logger = createLogger("config: mgr");
 
 /*
@@ -41,6 +41,7 @@ interface Config {
 
 export async function getConfig(): Promise<Config> {
   const result = configLoader.search(process.cwd());
+  console.log("cwd", process.cwd())
 
   if (!result) {
     logger.warning("Could not find configuration, using default");

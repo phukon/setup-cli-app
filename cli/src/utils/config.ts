@@ -1,1 +1,1 @@
-export const BASE_URL = "https://github.com/phukon/create-cli-app/template/ts"
+export const BASE_URL = "https://github.com/phukon/setup-cli-app/template/ts"

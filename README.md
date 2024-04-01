@@ -16,13 +16,14 @@
 >
   <span style={{ fontSize: '100px' }}>🎈</span> {/* Increased font size for the emoji */}
   <div>
-    create-cli-app
+    setup-cli-app
   </div>
 </div>
 -->
-![banner](https://github.com/phukon/create-cli-app/assets/60285613/138d9473-7f2b-4243-9cb2-4b82c72cf12a)
+![b](https://github.com/phukon/setup-cli-app/assets/60285613/e5269230-ad4a-42fd-89dd-c59cc949008b)
 
-<h2 align="center">📦 Create CLI App</h2>
+
+<h2 align="center">📦 Setup CLI App</h2>
 
 <p align="center">
     The easiest way to set up a modern CLI app by running one command.
@@ -33,8 +34,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/phukon/clack/blob/main/LICENSE">
-   <img alt="GitHub License" src="https://img.shields.io/github/license/phukon/create-cli-app">
+  <a href="https://github.com/phukon/setup-cli-app/blob/main/LICENSE">
+   <img alt="GitHub License" src="https://img.shields.io/github/license/phukon/setup-cli-app">
   </a>
 </p>
 
@@ -58,10 +59,36 @@ The easiest way to start a modern cli app. It supercharges your development work
 
 ## 🏎️ Usage
 
-1. Run <kbd>pnpm create-cli-app init</kbd>. Follow the instructions. This scaffolds your project.
-2. Set your config and schema at src/config. (check schema.json)
+1. Run <kbd>pnpm setup-cli-app init</kbd>. Follow the instructions. This scaffolds your project.
+2. Set your config and schema at src/config. (check schema.json)<br/>
+Upon building this TypeScript project, priority is given to configurations specified within the `package.json` file. Consequently, removing configurations from `package.json` will prompt the tool to adopt the new settings from the <kbd>tool.config.js</kbd> file.
+
+> It looks for a config file in the dir of the user who installs/uses it.
+```
+{
+  // Default configuration
+  "properties": {
+    "port": {
+      "type": "number"
+    }
+  }
+}
+```
+
+Therefore, the user, who installs or utilizes the CLI tool, must include the following property within their `package.json`:
+
+```
+// package.json
+"tool": {
+  "port": 9999
+}
+```
+
+In the event that it is not specified in `package.json`, the user must provide a separate file named <kbd>tool.config.js</kbd>.
+
 3. To see debug logs. Set a `DEBUG` environment variable.
-4. Run with args `create-cli-app --start` or `create-cli-app --build`
+4. On bumping the package version. The project is build automatically and tags are pushed to remote repo.<br/>Or build manually with `pnpm build`
+5. Run with args `setup-cli-app --start`.
 
 ## Commands
 

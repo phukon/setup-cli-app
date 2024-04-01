@@ -1,8 +1,14 @@
 {
-  "name": "create-cli-app",
+  "name": "setup-cli-app",
   "version": "1.0.0",
-  "description": "Set up a modern CLI app by running one command.",
+  "description": "The easiest way to set up a modern CLI app by running one command.",
   "main": "index.js",
+  "author": "Riki Phukon",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "setup-cli-app": "dist/index.js"
+  },
   "scripts": {
     "clean": "rimraf dist",
     "prebuild": "npm run clean",
@@ -10,10 +16,18 @@
     "preversion": "npm run build",
     "postversion": "git push --tags"
   },
-  "keywords": [],
-  "author": "Riki Phukon",
-  "license": "MIT",
-  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/phukon/setup-cli-app"
+  },
+  "homepage": "https://github.com/phukon/setup-cli-app#readme",
+  "keywords": [
+    "cli",
+    "scaffold",
+    "scaffolding",
+    "template",
+    "generator"
+  ],
   "devDependencies": {
     "@types/degit": "^2.8.6",
     "@types/fs-extra": "^11.0.4",

@@ -11,7 +11,7 @@ async function main() {
   const packageInfo = await getPackageInfo();
 
   const program = new Command()
-    .name("create-cli-app")
+    .name("setup-cli-app")
     .description("Set up a modern CLI app by running one command.")
     .version(
       packageInfo.version || "1.0.0",
