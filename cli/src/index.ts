@@ -14,7 +14,7 @@ async function main() {
     .name("setup-cli-app")
     .description("Set up a modern CLI app by running one command.")
     .version(
-      "1.0.3",
+      "1.1.0",
       "-v, --version",
       "display the version number"
     )
